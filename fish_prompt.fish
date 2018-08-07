@@ -17,7 +17,7 @@ function fish_prompt
   set -l green (set_color green)
 
   set -l color_normal (set_color normal)
-  set -l color_whoami (set_color -o green)
+  set -l color_whoami (set_color green)
 
   if test $last_status = 0
       set arrow " $green>︎︎"
