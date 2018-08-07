@@ -17,9 +17,9 @@ function fish_prompt
   set -l normal (set_color normal)
 
   if test $last_status = 0
-      set arrow " $green▶︎︎"
+      set arrow " $green>︎︎"
   else
-      set arrow " $red▶︎︎"
+      set arrow " $red>︎︎"
   end
   set -l cwd $cyan(prompt_pwd)
 
@@ -37,6 +37,6 @@ function fish_prompt
     end
   end
 
-  echo -n -s $cwd $git_info $normal $arrow $normal ' '
+  echo -n -s $green (whoami) $dark_green @ $green (hostname|cut -d . -f 1) ": " $cwd $git_info $normal $arrow $normal ' '
 end
 
