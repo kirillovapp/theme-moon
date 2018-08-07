@@ -40,6 +40,6 @@ function fish_prompt
     end
   end
 
-  echo -n -s $color_whoami (whoami) $color_whoami @ $color_whoami (hostname|cut -d . -f 1) ": " $cwd $git_info $color_normal $arrow $color_normal ' '
+  echo -n -s $color_whoami (whoami) @ (hostname|cut -d . -f 1) ": " $cwd $git_info $arrow $color_normal ' '
 end
 
