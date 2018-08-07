@@ -9,12 +9,15 @@ end
 
 function fish_prompt
   set -l last_status $status
-  set -l cyan (set_color -o cyan)
-  set -l yellow (set_color -o yellow)
-  set -l red (set_color -o red)
-  set -l blue (set_color -o blue)
-  set -l green (set_color -o green)
-  set -l normal (set_color normal)
+
+  set -l cyan (set_color cyan)
+  set -l yellow (set_color yellow)
+  set -l red (set_color red)
+  set -l blue (set_color blue)
+  set -l green (set_color green)
+
+  set -l color_normal (set_color normal)
+  set -l color_whoami (set_color -o green)
 
   if test $last_status = 0
       set arrow " $green>︎︎"
@@ -32,11 +35,11 @@ function fish_prompt
       if test (_git_branch_name) = 'master'
         set git_info "$blue ($red$git_branch$blue)"
       else
-        set git_info "$blue ($normal$git_branch$blue)"
+        set git_info "$blue ($color_normal$git_branch$blue)"
       end
     end
   end
 
-  echo -n -s $green (whoami) $dark_green @ $green (hostname|cut -d . -f 1) ": " $cwd $git_info $normal $arrow $normal ' '
+  echo -n -s $color_whoami (whoami) $color_whoami @ $color_whoami (hostname|cut -d . -f 1) ": " $cwd $git_info $color_normal $arrow $color_normal ' '
 end
 
