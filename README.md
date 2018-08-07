@@ -1,7 +1,7 @@
-## moon
+## Moon
 Based on the mars theme (which was based on the eclm theme, which was based on the robbyrussell theme).
 
-![mars theme](https://raw.githubusercontent.com/oh-my-fish/theme-mars/master/screenshot.png)
+![moon theme](https://raw.githubusercontent.com/kirillovapp/theme-moon/master/screenshot.png)
 
 
 #### Characteristics
