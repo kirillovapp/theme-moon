@@ -1,5 +1,5 @@
 ## mars
-Based on the eclm theme (which was based on the robbyrussell theme).
+Based on the mars theme (which was based on the eclm theme, which was based on the robbyrussell theme).
 
 ![mars theme](https://raw.githubusercontent.com/oh-my-fish/theme-mars/master/screenshot.png)
 
