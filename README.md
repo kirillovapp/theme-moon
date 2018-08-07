@@ -1,7 +1,7 @@
 ## Moon
 Based on the mars theme (which was based on the eclm theme, which was based on the robbyrussell theme).
 
-![moon theme](https://raw.githubusercontent.com/kirillovapp/theme-moon/master/screenshot.png)
+![moon theme](https://raw.githubusercontent.com/kirillovapp/theme-moon/master/screenshot1.png)
 
 
 #### Characteristics
